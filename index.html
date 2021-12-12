@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100vw;
+    }
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    img{
+        width: 64vh;
+        /* border: 2px solid rebeccapurple; */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      
+    }
+    .nav{
+       
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5), 0 20px 100px 0 rgba(0, 0, 0, 0.19)
+    }
+    .ul{
+        display: flex;
+       
+    }
+    li{
+        text-decoration: none;
+        list-style: none;
+        background-color: white;
+        margin-left: auto;
+    margin-right: auto; 
+padding:5px;
+border-radius: 20px;
+}
+img:hover{
+    box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.5), 0 20px 100px 0 rgba(0, 0, 0, 0.19);
+}
+    @media screen and (max-width: 768px) {
+        
+.ul{
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+   font-size:x-large;
+   background-color: rgb(255, 255, 255);
+            flex-grow: 1;
+           
+
+}
+img {
+  width: 95%;
+}
+li{
+    margin-top: 5px;
+    
+   
+}
+}
+button{
+    border-radius: 5px;
+    background-color: white;
+}
+body{
+    background:url('bg.jpg');
+    background-size: cover;
+    
+}
+.txtarea{
+    font-size: 20px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(170, 170, 170);
+    
+}
+
+</style>
+<body>
+
+    <div class="nav">
+ 
+<ul  style=" padding: 2px;" class="ul">
+    <li style="margin:auto;padding: 10px; font-size: 30px;"><img  style=" height: 25px;width: 25px;" src="FAV.jpg" class ="logo"alt=""> IMAGES</li>
+    
+        
+        <li> 
+            <input  placeholder="search image"style="border: radius 30px; width: 250px ; padding:7px " class="txtarea" type="text">
+         <button  style="border: 0px; font-size: 20px; ;font-size: inherit;width: 50px;; height: 40px;"class="clkme">&#128269;</li>
+    
+    <li  style="  margin:auto; padding: 10px; text-align: center; font-size: 30px;">CLICK IMAGE TO DOWNLOAD</li>
+    
+   
+</ul>
+    </div>
+   <br>
+    <div class="parent">
+       
+        
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
